@@ -20,3 +20,13 @@ for s in score:
 
 print(MaxScore)
 print(MinScore)
+
+for s in score:
+  total = total + int(s)
+  if int(s) < 60:
+    i = i + 1
+    continue
+
+score_average = total / len(score)
+print('平均數:',score_average)
+print(i)
