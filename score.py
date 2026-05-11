@@ -8,14 +8,15 @@ Original file is located at
 """
 
 score = input("請輸入成績").split()
-
+i = 0
+total = 0
 MaxScore = 0
 MinScore = 100
 
 for s in score:
   if int(s) > MaxScore:
     MaxScore = int(s)
-  elif int(s) < MinScore:
+  if int(s) < MinScore:
     MinScore = int(s)
 
 print(MaxScore)
